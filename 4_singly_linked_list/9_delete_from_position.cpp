@@ -11,6 +11,7 @@ public:
         this->next = NULL;
     }
 };
+//
 void insert_at_tail(Node *&head, int v)
 {
     Node *newNode = new Node(v);
