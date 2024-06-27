@@ -19,8 +19,8 @@ int main() {
 
     cout<<a.val<<" "<<b.val<<endl;
     //2
-    cout<< (*a.next).vall;
+    cout<< (*a.next).val;
     //3
-       cout<< a.next->vall;
+       cout<< a.next->val;
     return 0;
 }

@@ -47,6 +47,7 @@ void print_linked_list(Node *head)
     cout << endl
          << endl;
 }
+
 void insert_at_position(Node *head, int pos, int v)
 {
     Node *newNode = new Node(v);
@@ -69,6 +70,7 @@ void insert_at_position(Node *head, int pos, int v)
          << "Inserted at position " << pos << endl
          << endl;
 }
+
 void insert_at_head(Node *&head, int v)
 {
     Node *newNode = new Node(v);
