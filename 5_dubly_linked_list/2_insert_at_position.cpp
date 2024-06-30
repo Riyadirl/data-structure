@@ -36,7 +36,7 @@ void print_reverse(Node *tail)
     cout << endl;
 }
 
-void insert_at_position(Node *head, int pos, int val)
+void insert_at_position(Node *head, int pos, int val) //O(N)
 {
     Node *newNode = new Node(val);
     Node *tmp = head;
@@ -49,7 +49,7 @@ void insert_at_position(Node *head, int pos, int val)
     newNode->next->prev = newNode; // 100<-30
     newNode->prev = tmp;           // 20<-100
 }
-int size(Node *head)
+int size(Node *head)  //O(n)
 {
     Node *tmp = head;
     int cnt = 0;
@@ -60,7 +60,7 @@ int size(Node *head)
     }
     return cnt;
 }
-void insert_head(Node *&head, Node *&tail, int val)
+void insert_head(Node *&head, Node *&tail, int val) //O(1)
 {
     Node *newNode = new Node(val);
     if (head == NULL)
@@ -73,7 +73,7 @@ void insert_head(Node *&head, Node *&tail, int val)
     head->prev = newNode;
     head = newNode;
 }
-void insert_tail(Node *&head, Node *&tail, int val)
+void insert_tail(Node *&head, Node *&tail, int val) //O(1)
 {
     Node *newNode = new Node(val);
     if (tail == NULL)
