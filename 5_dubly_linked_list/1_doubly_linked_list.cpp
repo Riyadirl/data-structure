@@ -37,7 +37,7 @@ void print_reverse(Node *tail)
 int main()
 {
     Node *head = new Node(10);
-    Node *a = new Node(20);
+    Node *a = new Node(20 );
     Node *b = new Node(30);
     Node *tail = b;
 
