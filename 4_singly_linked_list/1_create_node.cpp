@@ -16,7 +16,7 @@ int main() {
 
     a.next =&b;
     b.next= NULL;
-
+    //1
     cout<<a.val<<" "<<b.val<<endl;
     //2
     cout<< (*a.next).val;
