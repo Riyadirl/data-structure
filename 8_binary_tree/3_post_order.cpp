@@ -13,7 +13,17 @@ public:
         this->right = NULL;
     }
 };
+void postorder(Node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
 
+    postorder(root->left);
+    postorder(root->right);
+    cout << root->val << " ";
+}
 int main()
 {
     Node *root = new Node(10);
@@ -37,6 +47,9 @@ int main()
     d->left = f;
     d->right = g;
     h->right = i;
+
+    // call
+    postorder(root);
 
     return 0;
 }

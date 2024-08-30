@@ -13,7 +13,17 @@ public:
         this->right = NULL;
     }
 };
+void inorder(Node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
 
+    inorder(root->left);
+    cout << root->val << " ";
+    inorder(root->right);
+}
 int main()
 {
     Node *root = new Node(10);
@@ -37,6 +47,9 @@ int main()
     d->left = f;
     d->right = g;
     h->right = i;
+
+    // call
+    inorder(root);
 
     return 0;
 }

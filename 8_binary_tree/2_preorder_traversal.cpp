@@ -13,7 +13,16 @@ public:
         this->right = NULL;
     }
 };
-
+void preorder(Node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    cout << root->val << " ";
+    preorder(root->left);
+    preorder(root->right);
+}
 int main()
 {
     Node *root = new Node(10);
@@ -37,6 +46,9 @@ int main()
     d->left = f;
     d->right = g;
     h->right = i;
+
+    // call
+    preorder(root);
 
     return 0;
 }
